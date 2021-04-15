@@ -11,6 +11,8 @@ public class DragAndDrop {
         });
         step("Drag and drop a to b", () -> {
         $("#column-a").dragAndDropTo("#column-b");
+        });
+            step("проверка", (step) -> {
         $("#column-a").shouldHave(text("B"));
         $("#column-b").shouldHave(text("A"));
         });
