@@ -9,7 +9,7 @@ public class DragAndDrop {
         step("Открываем главную страницу", (step) -> {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         });
-        step("Drag and drop a to b", () -> {
+        step("Drag and drop a to b", (step) -> {
         $("#column-a").dragAndDropTo("#column-b");
         });
             step("проверка", (step) -> {
