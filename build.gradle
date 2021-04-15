@@ -13,15 +13,15 @@ tasks.withType(JavaCompile) {
 }
 
 allure {
-    version = allureVersion
     autoconfigure = true
     aspectjweaver = true
-    configuration = "testImplementation"
+    version = '2.13.8'
 
     useJUnit5 {
-        version = allureVersion
+        version = '2.13.8'
     }
 }
+
 
 repositories {
     mavenCentral()
