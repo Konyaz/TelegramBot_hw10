@@ -12,7 +12,7 @@ public class DragAndDrop {
         step("Drag and drop a to b", (step) -> {
         $("#column-a").dragAndDropTo("#column-b");
         });
-            step("проверка", (step) -> {
+            step("Проверка", (step) -> {
         $("#column-a").shouldHave(text("B"));
         $("#column-b").shouldHave(text("A"));
         });
